@@ -1,0 +1,232 @@
+{
+  "type": "FeatureCollection",
+  "name": "ponnyathankam_heritage",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "metadata": {
+    "title": "Ponnyathankam Cultural Heritage & Historical Sites",
+    "source": "https://ponnyathankam.com/",
+    "publisher": "Ponnyathankam Festival Committee & Kerala Folklore Academy",
+    "compiler": "Kadirur Grama Panchayat WebGIS Spatial Information System",
+    "coordinate_system": "WGS 84 (EPSG:4326)",
+    "publication_year": 2026,
+    "last_updated": "2026-10-27"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.530725, 11.774789]
+      },
+      "properties": {
+        "id": 1,
+        "name": "Ponnyathankam Ankathattu & Festival Arena",
+        "malayalam_name": "പൊന്ന്യത്തങ്കം അങ്കത്തട്ട്",
+        "category": "Martial Arts Arena & Heritage Venue",
+        "description": "The world's only permanent traditional Ankathattu (raised combat arena), constructed on 25 cents of land in historic Ponniam Ezharakandam. Venue of the world's largest annual Kalaripayattu festival beginning on Kumbham 9.",
+        "historical_event": "16th-century historic duel between Chekavar Thacholi Manikoth Othenan Kurup and Kadirur Mathiloor Gurukkal.",
+        "inauguration_date": "21 February 2019",
+        "inaugurated_by": "Sri Pinarayi Vijayan, Hon. Chief Minister of Kerala",
+        "annual_festival_date": "Kumbham 9 every year (February 21)",
+        "ward_no": "14",
+        "ward_name": "PULLODI",
+        "panchayat": "Kadirur Grama Panchayat",
+        "taluk": "Thalassery",
+        "district": "Kannur",
+        "governing_org": "Ponnyathankam Committee / Patyam Gopalan Memorial Club / Ponniam Keli",
+        "govt_grant": "Rs. 8 Crores (Kerala State Budget Project, Culture Dept. & Folklore Academy)",
+        "photo": "ponnyathankam_ankathattu.jpg",
+        "source_url": "https://ponnyathankam.com/about-us",
+        "data_date": "2024-2026"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [75.5292, 11.7735],
+            [75.5322, 11.7735],
+            [75.5325, 11.7760],
+            [75.5295, 11.7762],
+            [75.5292, 11.7735]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "name": "Ponniam Ezharakandam Historical Field",
+        "malayalam_name": "പൊന്ന്യം ഏഴരക്കണ്ടം",
+        "category": "Historic Battlefield Landscape (Ankakalam)",
+        "description": "Historic paddy farming terrain in Ponniam celebrated in the Vadakkan Pattukal ballads as the traditional arena for major martial duels ('Poyth') in medieval Malabar.",
+        "historical_event": "Site of the 3-day fatal duel (Kumbham 9, 10, 11) between Thacholi Othenan and Kadirur Gurukkal.",
+        "inauguration_date": "Historical / Medieval",
+        "inaugurated_by": "Traditional Malabar Heritage",
+        "annual_festival_date": "Kumbham 9 every year (February 21)",
+        "ward_no": "14",
+        "ward_name": "PULLODI",
+        "panchayat": "Kadirur Grama Panchayat",
+        "taluk": "Thalassery",
+        "district": "Kannur",
+        "governing_org": "Traditional Heritage Land",
+        "govt_grant": "Kerala Folklore Academy Protected Heritage Site",
+        "photo": "kalaripayattu_duel.jpg",
+        "source_url": "https://ponnyathankam.com/about-us",
+        "data_date": "2024-2026"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.531850, 11.776620]
+      },
+      "properties": {
+        "id": 3,
+        "name": "Pullodi Patyam Gopalan Memorial Reading Room & Club",
+        "malayalam_name": "പുള്ളോടി പാട്യം ഗോപാലൻ സ്മാരക വായനശാല & ക്ലബ്ബ്",
+        "category": "Community & Cultural Organizing Hub",
+        "description": "Local youth organization and library in Pullodi village that initiated historical research in 2015, coordinated with Kerala Folklore Academy, and mobilized community funding to build the permanent Ankathattu.",
+        "historical_event": "Revived the historic Ponnyathankam festival in 2015 with 18 cultural organizations under Ponniam Keli.",
+        "inauguration_date": "Established 2015 (Revival Initiative)",
+        "inaugurated_by": "Local Village Community of Pullodi",
+        "annual_festival_date": "Annual Cultural Celebrations",
+        "ward_no": "14",
+        "ward_name": "PULLODI",
+        "panchayat": "Kadirur Grama Panchayat",
+        "taluk": "Thalassery",
+        "district": "Kannur",
+        "governing_org": "Patyam Gopalan Memorial Club & Library",
+        "govt_grant": "Local Community & Expatriate Contributions",
+        "photo": "ponnyathankam_logo.png",
+        "source_url": "https://ponnyathankam.com/about-us",
+        "data_date": "2024-2026"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.526200, 11.791500]
+      },
+      "properties": {
+        "id": 4,
+        "name": "Historic Mathiloor Kalari (Kadirur Gurukkal)",
+        "malayalam_name": "മതിലൂർ കളരി (കതിരൂർ ഗുരുക്കൾ പാരമ്പര്യം)",
+        "category": "Historical Kalari Seat",
+        "description": "Seat of Mathiloor Gurukkal (Kadirur Gurukkal), who trained over 10,000 disciples in Kadirur including Thacholi Othenan. Descendant Kalari schools participating in Ponnyathankam: Gurukripa Kalari Sangham & Gurukulam Kalari Sangham in Pullyod.",
+        "historical_event": "Ancient center of northern Kalaripayattu instruction in Kadirur.",
+        "inauguration_date": "16th-Century Lineage",
+        "inaugurated_by": "Mathiloor Gurukkal Tradition",
+        "annual_festival_date": "Annual Kalari Demonstrations",
+        "ward_no": "1",
+        "ward_name": "PULLYODU",
+        "panchayat": "Kadirur Grama Panchayat",
+        "taluk": "Thalassery",
+        "district": "Kannur",
+        "governing_org": "Descendant Kalari Sanghams (Gurukripa & Gurukulam)",
+        "govt_grant": "Traditional Lineage",
+        "photo": "meenakshi_amma_kalari.jpg",
+        "source_url": "https://ponnyathankam.com/about-us",
+        "data_date": "2024-2026"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.543500, 11.776000]
+      },
+      "properties": {
+        "id": 5,
+        "name": "Chundangapoil Ballad Memorial Site",
+        "malayalam_name": "ചുണ്ടങ്ങാപൊയിൽ ചരിത്ര സ്മൃതി",
+        "category": "Folklore & Ballad Landmark",
+        "description": "Recorded in the Vadakkan Pattukal ballads as the native residence of Mayinkutty, who was hired by Parunthukkal Emman Panicker and shot Thacholi Othenan from an ambush tunnel when Othenan returned to collect his forgotten Kattaram weapon.",
+        "historical_event": "Ambush of Thacholi Othenan following the victory at Ezharakandam.",
+        "inauguration_date": "16th-Century Ballad Site",
+        "inaugurated_by": "Traditional Folklore Marker",
+        "annual_festival_date": "Memorial Heritage Reference",
+        "ward_no": "7",
+        "ward_name": "CHUNDANGAPOYIL",
+        "panchayat": "Kadirur Grama Panchayat",
+        "taluk": "Thalassery",
+        "district": "Kannur",
+        "governing_org": "Kadirur Local Folklore History",
+        "govt_grant": "Oral History Reference",
+        "photo": "kalaripayattu_duel.jpg",
+        "source_url": "https://ponnyathankam.com/about-us",
+        "data_date": "2024-2026"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.528450, 11.782520]
+      },
+      "properties": {
+        "id": 6,
+        "name": "Kathiroor Suryanarayana Temple",
+        "malayalam_name": "കതിരൂർ സൂര്യനാരായണ ക്ഷേത്രം",
+        "category": "13th-Century Heritage Monument",
+        "description": "Historic 13th-century Sun temple located in Kadirur. One of Kerala's rare ancient temples dedicated to the Sun deity Suryanarayana.",
+        "historical_event": "13th-Century temple architecture and central cultural monument of Kadirur.",
+        "inauguration_date": "13th-Century CE",
+        "inaugurated_by": "Historical Travancore/Malabar Temple Heritage",
+        "annual_festival_date": "Annual Temple Festival (Medam)",
+        "ward_no": "16",
+        "ward_name": "KADIRUR TEMPLE",
+        "panchayat": "Kadirur Grama Panchayat",
+        "taluk": "Thalassery",
+        "district": "Kannur",
+        "governing_org": "Malabar Devaswom Board",
+        "govt_grant": "Heritage Site",
+        "photo": "kadirur_temple_heritage.jpg",
+        "source_url": "Kadirur LSGD Portal",
+        "data_date": "2024-2026"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [75.626500, 11.606200]
+      },
+      "properties": {
+        "id": 7,
+        "name": "Lokanarkkavu Temple (Vatakara Axis)",
+        "malayalam_name": "ലോകനാർകാവ് ക്ഷേത്രം (വടകര)",
+        "category": "Regional Historical Connection",
+        "description": "The historic temple in Vatakara where Thacholi Othenan offered prayers, and where the dispute with Kadirur Gurukkal occurred during the festival, leading to the challenge for the duel at Ponniam Ezharakandam.",
+        "historical_event": "Origin of the duel challenge between Othenan and Kadirur Gurukkal.",
+        "inauguration_date": "Ancient Heritage",
+        "inaugurated_by": "Kadathanad Royal Family / Devaswom",
+        "annual_festival_date": "Pooram Festival (Meenam)",
+        "ward_no": "Vatakara",
+        "ward_name": "Memunda / Vatakara",
+        "panchayat": "Villiappally / Vatakara",
+        "taluk": "Vatakara",
+        "district": "Kozhikode",
+        "governing_org": "Malabar Devaswom / Lokanarkkavu Trust",
+        "govt_grant": "Historical Node",
+        "photo": "kalaripayattu_duel.jpg",
+        "source_url": "https://ponnyathankam.com/about-us",
+        "data_date": "2024-2026"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "WebGIS – Kadirur Grama Panchayat | LSGD Kerala",
+  "short_name": "Kadirur WebGIS",
+  "description": "Spatial Information System and Geographic Resource Portal for Kadirur Grama Panchayat, Kerala",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#072138",
+  "theme_color": "#0e3d67",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "assets/images/lsgd_logo.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/ssus_logo.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

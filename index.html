@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS – Kadirur Grama Panchayat | LSGD Kerala</title>
+    <meta name="description"
+        content="Official Spatial Information System (WebGIS) of Kadirur Grama Panchayat, LSGD Kerala. Spatial resource mapping, administrative wards, civic infrastructure, and local-level planning.">
+    <meta name="theme-color" content="#0e3d67">
+
+    <!-- Progressive Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Preload Critical Above-the-Fold Hero Image -->
+    <link rel="preload" as="image" href="assets/images/kadirur_landscape_hero.jpg">
+
+    <!-- Google Fonts with Non-Blocking Asynchronous Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- Core Optimized Stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=1.2.1">
+</head>
+
+<body>
+
+    <!-- Accessible Keyboard Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Unified Sticky Site Header -->
+    <header class="site-header" id="site-header">
+        <!-- Top Utility Bar -->
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <span class="location-tag">
+                    <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                    </svg>
+                    Kadirur Grama Panchayat, Thalassery, Kannur
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <span class="network-badge" id="network-badge" aria-live="polite" title="Network status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Online</span>
+                </span>
+                <a href="https://kadirurpanchayat.lsgkerala.gov.in/en" target="_blank" rel="noopener noreferrer">
+                    <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                    </svg>
+                    Panchayat LSGD Portal
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Navigation Bar -->
+        <div class="main-nav-wrapper">
+            <div class="nav-container">
+                <!-- Branding: University Dept Logo + Titles -->
+                <a href="#home" class="brand-link" aria-label="Kadirur Grama Panchayat WebGIS Home">
+                    <img src="assets/images/ssus_logo.jpg" alt="SSUS Dept. of Geography Logo"
+                        class="brand-logo ssus-logo" width="52" height="52">
+                    <div class="header-titles">
+                        <h1 class="site-title">Kadirur Grama Panchayat</h1>
+                        <span class="site-subtitle">Spatial Information System (WebGIS)</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="desktop-nav" aria-label="Primary Navigation">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active"><svg class="svg-icon" viewBox="0 0 24 24"
+                                    aria-hidden="true">
+                                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                                </svg> Home</a></li>
+                        <li><a href="#about" class="nav-link"><svg class="svg-icon" viewBox="0 0 24 24"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                                </svg> About Panchayat</a></li>
+                        <li><a href="#webgis" class="nav-link"><svg class="svg-icon" viewBox="0 0 24 24"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z" />
+                                </svg> Interactive Map</a></li>
+                        <li><a href="#contact" class="nav-link"><svg class="svg-icon" viewBox="0 0 24 24"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg> Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions & Secondary Logo -->
+                <div class="header-actions">
+                    <a href="#webgis" class="btn btn-sm btn-nav-cta">
+                        <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z" />
+                        </svg>
+                        <span>Launch Map</span>
+                    </a>
+                    <img src="assets/images/lsgd_logo.png" alt="LSGD Kerala Logo" class="brand-logo lsgd-logo"
+                        width="46" height="46">
+
+                    <!-- Accessible Mobile Hamburger Button -->
+                    <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle navigation menu"
+                        aria-expanded="false" aria-controls="mobile-nav-drawer">
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                        <span class="hamburger-bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accessible Mobile Navigation Drawer -->
+        <nav class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation" hidden>
+            <ul class="mobile-nav-list">
+                <li><a href="#home" class="mobile-nav-link active"><svg class="svg-icon" viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                        </svg> Home</a></li>
+                <li><a href="#about" class="mobile-nav-link"><svg class="svg-icon" viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                        </svg> About Panchayat</a></li>
+                <li><a href="#webgis" class="mobile-nav-link"><svg class="svg-icon" viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path
+                                d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z" />
+                        </svg> Interactive Map</a></li>
+                <li><a href="#contact" class="mobile-nav-link"><svg class="svg-icon" viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg> Contact</a></li>
+                <li class="mobile-nav-action">
+                    <a href="https://kadirurpanchayat.lsgkerala.gov.in/en" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline-light btn-block">
+                        <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                        </svg>
+                        Panchayat LSGD Portal
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Page Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Kadirur WebGIS</h2>
+                <p>A collaborative spatial information initiative by Sree Sankaracharya University of Sanskrit (Dept. of
+                    Geography) mapping the geographic resources and infrastructure of Kadirur Grama Panchayat.</p>
+                <a href="#webgis" class="btn btn-primary">
+                    <span>Explore Map Data</span>
+                    <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container">
+            <div class="section-header">
+                <h2>Panchayat Profile</h2>
+                <p>Geographical setting, administrative landscape, and cultural heritage of Kadirur</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Overview</h3>
+                    <p>
+                        <strong>Kadirur Grama Panchayat</strong> is a rural local self-government body located in the
+                        Kannur district of Kerala, India. Positioned roughly 7 kilometers from Thalassery town along the
+                        Thalassery–Coorg road, this vibrant panchayat falls under the Thalassery Assembly constituency
+                        and the Vadakara Lok Sabha constituency.
+                    </p>
+                    <p>
+                        The Panchayat is responsible for providing essential civic services, maintaining local
+                        infrastructure, supporting sanitation and waste management, and implementing various government
+                        development programmes.
+                    </p>
+                    <p>
+                        Its geographical location, settlement pattern, transportation network, drainage, land use, and
+                        natural resources make it an important area for resource mapping and local-level planning. The
+                        present WebGIS project provides a comprehensive geographical overview of the region's essential
+                        resources.
+                    </p>
+
+                    <!-- Key Stats Strip -->
+                    <div class="key-stats-strip">
+                        <div class="stat-item">
+                            <span>Panchayat Area</span>
+                            <strong>12.30 sq.km</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span>Electoral Wards</span>
+                            <strong>20 Wards</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span>Taluk / Dist</span>
+                            <strong>Thalassery, Kannur</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="heritage-cards-stack">
+                    <!-- Ponnyathankam Cultural Heritage Card -->
+                    <div class="map-card heritage-highlight-card">
+                        <div class="card-badge-strip">
+                            <span class="badge-tag-heritage">Ponnyathankam Cultural Heritage</span>
+                            <span class="badge-tag-ward">Ward 14 (Pullodi)</span>
+                        </div>
+                        <h3>Ponnyathankam Permanent Ankathattu</h3>
+                        <img src="assets/images/ponnyathankam_ankathattu.jpg"
+                            alt="Ponnyathankam Permanent Ankathattu at Ponniam Ezharakandam" class="map-image"
+                            width="597" height="335" loading="lazy" decoding="async">
+                        <p class="map-card-caption">
+                            <strong>Ponniam Ezharakandam:</strong> World's only permanent traditional Ankathattu arena,
+                            dedicated in 2019 by Kerala CM Pinarayi Vijayan at the 16th-century duel site of Thacholi
+                            Othenan and Kadirur Gurukkal. Hosts the world's largest annual Kalaripayattu festival every
+                            Kumbham 9.
+                        </p>
+                        <div class="card-actions-strip">
+                            <a href="map/index.html" class="btn btn-sm btn-heritage-locate">
+                                <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                                <span>Launch Map Viewer</span>
+                            </a>
+                            <a href="https://ponnyathankam.com/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-sm btn-outline-dark">
+                                <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                                </svg>
+                                <span>Official Portal</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Suryanarayana Temple Card -->
+                    <div class="map-card">
+                        <h3>Kathiroor Suryanarayana Temple</h3>
+                        <img src="assets/images/kadirur_temple_heritage.jpg"
+                            alt="Kathiroor Suryanarayana Temple Heritage Monument" class="map-image" width="597"
+                            height="335" loading="lazy" decoding="async">
+                        <p class="map-card-caption">Kathiroor Suryanarayana Temple (13th Century Heritage Monument)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive WebGIS CTA Section (with Resilient Live Map Container) -->
+        <section id="webgis" class="gis-cta-section">
+            <div class="gis-cta-container">
+                <div class="gis-cta-icon-wrapper">
+                    <svg class="gis-cta-icon svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                    </svg>
+                </div>
+                <h2>Interactive Spatial Viewer</h2>
+                <p>Dive into our comprehensive spatial mapping tool. Toggle custom layers to view administrative
+                    boundaries, land utilization, transportation networks, and vital infrastructure in high resolution.
+                </p>
+
+                <!-- Embedded Map Frame with Loading Skeleton & Offline Fallback -->
+                <div class="gis-embed-frame" id="gis-embed-frame">
+                    <!-- Skeleton Loader State -->
+                    <div class="iframe-skeleton" id="iframe-skeleton" aria-hidden="true">
+                        <div class="skeleton-spinner"></div>
+                        <p class="skeleton-text">Loading Kadirur WebGIS...</p>
+                    </div>
+
+                    <!-- Live Embedded Map Iframe pointing to local integrated WebGIS -->
+                    <iframe id="gis-map-iframe" src="map/index.html" title="Kadirur Grama Panchayat Interactive WebGIS"
+                        loading="lazy" allowfullscreen>
+                    </iframe>
+
+                    <!-- Offline / Network Failure Fallback Notice -->
+                    <div class="iframe-offline-fallback" id="iframe-offline-fallback" style="display: none;">
+                        <div class="offline-fallback-content">
+                            <svg class="fallback-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+                            </svg>
+                            <h4>Interactive Viewer Notice</h4>
+                            <p>Loading local map data. If the embedded map does not appear, click Launch to open the
+                                full interactive viewer.</p>
+                            <button type="button" class="btn btn-sm btn-primary" id="retry-iframe-btn">
+                                <svg class="svg-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" />
+                                </svg>
+                                Reload Map
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <!-- Primary Launch Button -->
+                    <a href="map/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-launch">
+                        <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z" />
+                        </svg>
+                        <span>Launch Full Map Viewer</span>
+                    </a>
+
+                    <!-- Secondary Info Button -->
+                    <a href="https://kadirurpanchayat.lsgkerala.gov.in/en" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline-light">
+                        <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+                        </svg>
+                        <span>Visit Panchayat LSGD</span>
+                    </a>
+
+                    <!-- Ponnyathankam Official Site Button -->
+                    <a href="https://ponnyathankam.com/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline-light">
+                        <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                        </svg>
+                        <span>Ponnyathankam Portal</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>About WebGIS</h3>
+                <p>Developed as a spatial information system to aid resource mapping, local-level planning, and
+                    efficient governance for Kadirur Grama Panchayat.</p>
+                <div class="offline-cached-badge">
+                    <svg class="svg-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    </svg>
+                    <span>PWA Enabled &bull; Offline Capable</span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><svg class="svg-icon svg-sm" viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                            </svg> Home</a></li>
+                    <li><a href="#about"><svg class="svg-icon svg-sm" viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                            </svg> Panchayat Profile</a></li>
+                    <li><a href="map/index.html" target="_blank" rel="noopener noreferrer"><svg class="svg-icon svg-sm"
+                                viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                            </svg> Launch Map Viewer</a></li>
+                    <li><a href="https://kadirurpanchayat.lsgkerala.gov.in/en" target="_blank"
+                            rel="noopener noreferrer"><svg class="svg-icon svg-sm" viewBox="0 0 24 24">
+                                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                            </svg> Panchayat LSGD Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Project Contact</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <p><svg class="svg-icon icon-gold" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            </svg> <strong>Ashith</strong></p>
+                    </li>
+                    <li>
+                        <p><svg class="svg-icon icon-gold" viewBox="0 0 24 24">
+                                <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+                            </svg> Dept. of Geography, SSUS</p>
+                    </li>
+                    <li><a href="mailto:ashithgeo@gmail.com"><svg class="svg-icon icon-gold" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg> Email: ashithgeo@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kadirur Grama Panchayat WebGIS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Deferred Application & Service Worker Controller -->
+    <script src="app.js?v=1.2.1" defer></script>
+</body>
+
+</html>
